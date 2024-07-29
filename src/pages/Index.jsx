@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Plane, Hotel, Utensils, Calendar, CreditCard, Map } from 'lucide-react';
 import FlightSearch from '@/components/FlightSearch';
+import HotelSearch from '@/components/HotelSearch';
 
 const Index = () => {
   const [destination, setDestination] = useState('');
@@ -57,15 +58,7 @@ const Index = () => {
           <FlightSearch />
         </TabsContent>
         <TabsContent value="accommodations">
-          <Card>
-            <CardHeader>
-              <CardTitle>Accommodation Booking</CardTitle>
-              <CardDescription>Find and book the perfect place to stay</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Accommodation booking functionality will be implemented here.</p>
-            </CardContent>
-          </Card>
+          <HotelSearch />
         </TabsContent>
         <TabsContent value="activities">
           <Card>
