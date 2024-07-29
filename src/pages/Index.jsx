@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Plane, Hotel, Utensils, Calendar, CreditCard, Map } from 'lucide-react';
+import FlightSearch from '@/components/FlightSearch';
 
 const Index = () => {
   const [destination, setDestination] = useState('');
@@ -53,15 +54,7 @@ const Index = () => {
           <TabsTrigger value="map"><Map className="mr-2 h-4 w-4" /> Map</TabsTrigger>
         </TabsList>
         <TabsContent value="flights">
-          <Card>
-            <CardHeader>
-              <CardTitle>Flight Booking</CardTitle>
-              <CardDescription>Search and book flights based on your preferences</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Flight booking functionality will be implemented here.</p>
-            </CardContent>
-          </Card>
+          <FlightSearch />
         </TabsContent>
         <TabsContent value="accommodations">
           <Card>
